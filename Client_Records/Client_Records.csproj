@@ -52,6 +52,7 @@
     <Compile Include="BeginningForm.Designer.cs">
       <DependentUpon>BeginningForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="databaseOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BeginningForm.resx">

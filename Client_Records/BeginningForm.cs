@@ -15,6 +15,12 @@ namespace Client_Records
         public BeginningForm()
         {
             InitializeComponent();
+            databaseOperations.createDatabaseFile();
+        }
+
+        private void BeginningForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
