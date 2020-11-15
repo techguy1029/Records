@@ -15,6 +15,18 @@ namespace Client_Records
         public BeginningForm()
         {
             InitializeComponent();
+            buttonNewEntry.TextAlign = ContentAlignment.MiddleCenter;
+            databaseOperations.setUpLocalDb();
+        }
+
+        private void buttonNewEntry_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BeginningForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,10 @@
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\bin\Debug\Client_Records.exe.config
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\bin\Debug\Client_Records.exe
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\bin\Debug\Client_Records.pdb
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\obj\Debug\Client_Records.csprojAssemblyReference.cache
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\obj\Debug\Client_Records.BeginningForm.resources
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\obj\Debug\Client_Records.Properties.Resources.resources
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\obj\Debug\Client_Records.csproj.GenerateResource.cache
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\obj\Debug\Client_Records.csproj.CoreCompileInputs.cache
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\obj\Debug\Client_Records.exe
+C:\Users\18fer\OneDrive\Documents\Records Project\Records\Client_Records\obj\Debug\Client_Records.pdb

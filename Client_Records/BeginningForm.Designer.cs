@@ -51,12 +51,14 @@
             // 
             // buttonNewEntry
             // 
-            this.buttonNewEntry.Location = new System.Drawing.Point(977, 585);
+            this.buttonNewEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNewEntry.Location = new System.Drawing.Point(841, 648);
             this.buttonNewEntry.Name = "buttonNewEntry";
-            this.buttonNewEntry.Size = new System.Drawing.Size(191, 69);
+            this.buttonNewEntry.Size = new System.Drawing.Size(125, 118);
             this.buttonNewEntry.TabIndex = 1;
-            this.buttonNewEntry.Text = "New Entry";
+            this.buttonNewEntry.Text = "+";
             this.buttonNewEntry.UseVisualStyleBackColor = true;
+            this.buttonNewEntry.Click += new System.EventHandler(this.buttonNewEntry_Click);
             // 
             // buttonSearch
             // 
@@ -133,6 +135,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "BeginningForm";
             this.Text = "Browse Data";
+            this.Load += new System.EventHandler(this.BeginningForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
