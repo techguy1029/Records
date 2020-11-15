@@ -16,7 +16,8 @@ namespace Client_Records
         {
             InitializeComponent();
             buttonNewEntry.TextAlign = ContentAlignment.MiddleCenter;
-            databaseOperations.setUpLocalDb();
+            //databaseOperations.setUpLocalDb();
+            databaseOperations.setUpDbStructure();
         }
 
         private void buttonNewEntry_Click(object sender, EventArgs e)

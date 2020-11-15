@@ -46,7 +46,26 @@ namespace Client_Records
         }
         public static void setUpDbStructure()
         {
-
+            SqlConnection myConn = new SqlConnection("Server=(LocalDB)\\MSSQLLocalDB;Integrated security=SSPI;database=recordsData");
+            String createTable = "CREATE TABLE Customers(ID int IDENTITY, firstName varchar(150), lastName varchar(150), Address varchar(150), phoneNumber varchar(150), alternatePhoneNumber varchar(150), billingAddress varchar(150))";
+            SqlCommand createTableSQL = new SqlCommand(createTable, myConn);
+            try
+            {
+                myConn.Open();
+                createTableSQL.ExecuteNonQuery();
+                MessageBox.Show("Table success");
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                if (myConn.State == ConnectionState.Open)
+                {
+                    myConn.Close();
+                }
+            }
         }
     }
 }
