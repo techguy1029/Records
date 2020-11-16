@@ -67,5 +67,30 @@ namespace Client_Records
                 }
             }
         }
+        public static bool writeDataToDB(string firstName, string lastName, string address, string phoneNum, string alternatePhoneNum, string billingAddress)
+        {
+            try 
+            {
+                SqlConnection sc = new SqlConnection();
+                SqlCommand com = new SqlCommand();
+                sc.ConnectionString = ("Server=(LocalDB)\\MSSQLLocalDB;Database=recordsData;Trusted_Connection=Yes");
+                sc.Open();
+
+                SqlCommand cmd = new SqlCommand("Insert into Customers values('" + firstName + "," + lastName + "," + address + "," + phoneNum + "," + alternatePhoneNum + "," + billingAddress + "')", sc);
+                int successOfSqlCommand = cmd.ExecuteNonQuery();
+                if (successOfSqlCommand != 0)
+                {
+                    MessageBox.Show("Gucci Boii");
+                    sc.Close();
+                    return true;
+                }
+                return false;
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+                return false;
+            }
+        }
     }
 }

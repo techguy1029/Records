@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +17,12 @@ namespace Client_Records
         {
             InitializeComponent();
             buttonNewEntry.TextAlign = ContentAlignment.MiddleCenter;
-            //databaseOperations.setUpLocalDb();
-            databaseOperations.setUpDbStructure();
+            if (Directory.Exists("C:\\ProgramData\\Records\\Data.mdf"))
+            {
+                databaseOperations.setUpLocalDb();
+                databaseOperations.setUpDbStructure();
+            }
+            databaseOperations.writeDataToDB("yeet", "yeet", "yeet", "yeet", "yeet", "yeet");
         }
 
         private void buttonNewEntry_Click(object sender, EventArgs e)
